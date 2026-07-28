@@ -1,11 +1,12 @@
 package com.uif.demo.spring;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-@Required
+@RequiredArgsConstructor
 public class ExampleService {
 
-    private final
+    private final ExampleRepository repository;
 
 }
