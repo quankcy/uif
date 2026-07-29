@@ -40,7 +40,7 @@ public class ExampleRestControllerFT {
     }
 
     @Test
-    public void jakisLadnieNazwanyTest() {
+    public void jakisLadnieNazwanyTestSprawdzajacyPojedynczaFunkcjonalnosc_HappyPath() {
         System.out.println("Spring port: " + springAppPort);
         System.out.println(wireMockServer.baseUrl());
         // GIVEN
@@ -80,6 +80,5 @@ public class ExampleRestControllerFT {
         );
 
     }
-
 
 }
