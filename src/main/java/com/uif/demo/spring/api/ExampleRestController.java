@@ -12,13 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class ExampleRestController {
 
-    private final ExampleDbService service;
+    private final ExampleDomain exampleDomain;
 
     @PostMapping("/{name}")
     public ResponseEntity<String> hello(@PathVariable String name) {
-        // Walidacja
+        // Tutaj walidacja powinna byc
 
-        ExampleDomain exampleDomain = new ExampleDomain(service);
         String helloResponse = exampleDomain.sayHelloTo(name);
 
         return ResponseEntity.ok(helloResponse);

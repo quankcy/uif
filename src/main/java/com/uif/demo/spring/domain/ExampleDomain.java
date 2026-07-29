@@ -2,7 +2,6 @@ package com.uif.demo.spring.domain;
 
 import com.uif.demo.spring.repositories.db.ExampleDbService;
 import lombok.RequiredArgsConstructor;
-
 /* Agnostic domain */
 @RequiredArgsConstructor
 public class ExampleDomain {
