@@ -46,6 +46,7 @@ public class ExampleRestControllerIT {
                 .then()
                 .extract();
 
+        // THEN
         Assertions.assertAll(
                 () -> Assertions.assertEquals("Hi, Kamil!", response.asPrettyString())
         );
